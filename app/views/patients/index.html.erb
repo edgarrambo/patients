@@ -1,1 +1,13 @@
-<h1>testing</h1>
+<% @patients.each do |patient| %>
+  <div>
+    <h1><%= patient.name %></h1>
+    <h2><%= patient.age %></h2>
+    <h3><%= patient.gender %></h3>
+	<i><%= patient.address %></i>
+    <p><%= patient.phone_number %></p>
+    <h4><%= patient.email %></h4>
+
+  </div>
+
+  <hr />
+<% end %>
