@@ -1,0 +1,14 @@
+<div class="booyah-box col-10 offset-1">
+<h1> Patients Name</h1>
+  <%= simple_form_for @patient do |f| %>
+      <%= f.input :name %>
+    <%= f.input :age %>
+    <%= f.input :gender %>
+     <%= f.input :address%>
+    <%= f.input :phone_number %>
+    <%= f.input :email %>
+     <br />
+
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
+</div>
